@@ -13,7 +13,7 @@ app.set('json spaces', 2);
 class DataportenClient {
 	constructor(config) {
 	    this.config = config || {}
-	    this.issuerHost = 'https://auth.dataporten.no/'
+	    this.issuerHost = 'https://logincidadao.rs.gov.br/'
 	    this.client = null
 		this.tokenSet = null
 	}
@@ -68,10 +68,10 @@ class DataportenClient {
 
 
 var dp = new DataportenClient({
-    "client_id": "4e5eb26c-814e-4735-b098-0c86876a6dd6",
-    "client_secret": "1fa2180f-403c-4296-bb4f-b202801092d2",
+    "client_id": "149_va68p4x05e8csc4s04wgccsgooocws0844gwkk0cwg48sok4w",
+    "client_secret": "5m7yc4sozxookwk488kwgos8oc88w8oc0sk808gok8sg4ccsgs",
     "redirect_uri": "http://127.0.0.1:8080/callback",
-    "scope": "groups longterm openid userid email profile userid-feide",
+    "scope": "openid",
 })
 
 dp.init()
